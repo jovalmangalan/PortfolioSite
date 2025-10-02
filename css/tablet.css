@@ -1,0 +1,13 @@
+/* Tablet styles */
+
+header h1 {
+  font-size: 2rem;
+}
+
+nav a {
+  margin: 0 15px;
+}
+
+main {
+  padding: 1.5rem;
+}
