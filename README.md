@@ -3,25 +3,6 @@
 ## Project Overview  
 This project is my **HTML5 and CSS3 Portfolio Website**, created as part of **Assignment 1**.  
 
-## File Structure  
-PortfolioSite/
-├── index.html # Homepage with intro, recent work, and core skills
-├── about.html # About Me page with photo and video
-├── projects.html # Projects page showcasing my work
-├── contact.html # Contact page
-│
-├── css/
-│   ├── style.css # Base styles and overall theme
-│   ├── mobile.css
-│   ├── tablet.css
-│   └── laptop.css
-│
-├── images/ # Screenshots and profile picture
-├── videos/ # Embedded video files
-└── README.md # Documentation
-
-
-
 ## Features  
 - Navigation bar across all pages  
 - Frosted glass design using CSS blur + transparency effects  
