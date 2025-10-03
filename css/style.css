@@ -194,7 +194,7 @@ input:focus, textarea:focus {
 button {
   display: block;
   margin: 1.5rem auto 0;
-  background: #059669; /* changed to dark shade of green due to WAVE */
+  background: #047857; /* changed to dark shade of green due to WAVE */
   color: #fff;
   border: none;
   border-radius: 9px;
@@ -203,7 +203,7 @@ button {
   cursor: pointer;
   transition: background .25s ease;
 }
-button:hover { background: #047857; }
+button:hover { background: #065f46; }
 
 /* =========================
    Footer

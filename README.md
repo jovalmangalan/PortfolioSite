@@ -1,10 +1,9 @@
 # PortfolioSite  
 
-##  Project Overview  
+## Project Overview  
 This project is my **HTML5 and CSS3 Portfolio Website**, created as part of **Assignment 1**.  
-  
 
-##  File Structure  
+## File Structure  
 PortfolioSite/
 │
 ├── index.html # Homepage with intro, recent work, and core skills
@@ -23,7 +22,7 @@ PortfolioSite/
 └── README.md # Documentation
 
 
-##  Features  
+## Features  
 - Navigation bar across all pages  
 - Frosted glass design using CSS blur + transparency effects  
 - **About Me Page** with a profile photo and embedded video  
@@ -36,32 +35,25 @@ PortfolioSite/
 
 ---
 
-##  Responsive Design (Viewport Sizes)  
+## Responsive Design (Viewport Sizes)  
 I created three separate stylesheets to support responsive design:  
 - **Mobile (`mobile.css`)** → `max-width: 600px`  
-  - Designed for small smartphone screens.  
-  - Cards stack vertically and text/images resize for readability.  
-
 - **Tablet (`tablet.css`)** → `601px – 1024px`  
-  - Optimized for medium screens such as iPads.  
-  - Adjusts spacing, font sizes, and layout margins.  
-
 - **Laptop (`laptop.css`)** → `min-width: 1025px`  
-  - Standard desktop layout with centered frosted boxes and wider margins.  
 
 ---
 
 ## Color Scheme & Gradients  
-- **Base Colors**: Emerald green, mint green, golden yellowish accents.  
-- **Scheme Type**: green + yellow with accent tones.  
-- **Why Chosen**: I thought it looked cool and has a modern tone in it.  
+- **Base Colors**: Emerald green, mint green, golden yellowish accents  
+- **Scheme Type**: Green + yellow with accent tones  
+- **Why Chosen**: Modern and fresh aesthetic  
 - **Gradients Used**:  
-  - **Body Background**: A linear gradient from mint ('#d1fae5') to emerald ('#10b981').  
-  - **Highlighted Name**: Gradient text effect using emerald → blue → purple.  
+  - **Body Background**: Linear gradient from mint (`#d1fae5`) → emerald (`#10b981`)  
+  - **Highlighted Name**: Gradient text effect (emerald → blue → purple)  
 
 ---
 
-##  How to Run  
+## How to Run  
 1. Clone or download the repository  
 2. Open `index.html` in your browser  
 3. Navigate using the header links (Home | About Me | Projects | Contact)  
@@ -70,12 +62,9 @@ Deployed version: [GitHub Pages Link](https://jovalmangalan.github.io/PortfolioS
 
 ---
 
-##  Validation & Testing  
-still testing
-
----
-
-##  External Code Citations  
-- Gradient text effect adapted from [MDN Docs on background-clip](https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip).  
-- W3C validation and accessibility tools used as required by the assignment.  ~~
-- All other code written by me.  
+## Validation & Testing  
+- **HTML Validation**: All `.html` files passed the [W3C Markup Validation Service](https://validator.w3.org/) after fixes. All warnings (e.g., trailing slashes on void elements) were resolved.  
+- **CSS Validation**: All stylesheets passed the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/).  
+- **Accessibility Testing**:  
+  - Checked with [WAVE Web Accessibility Tool](https://wave.webaim.org/).  
+  - All issues (such as low contrast on buttons and missing alt attributes) were fixed.
