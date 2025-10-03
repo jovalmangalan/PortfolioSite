@@ -1,17 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact Me</title>
-
-  <!-- Base Styles -->
-  <link rel="stylesheet" href="css/style.css">
-
-  <!-- Responsive Styles -->
-  <link rel="stylesheet" href="css/mobile.css" media="(max-width: 600px)">
-  <link rel="stylesheet" href="css/tablet.css" media="(min-width: 601px) and (max-width: 1024px)">
-  <link rel="stylesheet" href="css/laptop.css" media="(min-width: 1025px)">
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
   <header>
@@ -24,26 +17,23 @@
     </nav>
   </header>
 
-  <main>
-    <section>
-      <form>
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
+  <main class="contact-section frosted">
+    <h2>Send a Message</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input id="name" name="name" type="text" required/>
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+      <label for="email">Email:</label>
+      <input id="email" name="email" type="email" required/>
 
-        <label for="phone">Phone:</label><br>
-        <input type="tel" id="phone" name="phone"
-               pattern="[0-9]{3}[- ]?[0-9]{3}[- ]?[0-9]{4}"
-               placeholder="123-456-7890" required><br><br>
+      <label for="phone">Phone:</label>
+      <input id="phone" name="phone" type="tel" placeholder="123-456-7890"/>
 
-        <label for="comments">Comments:</label><br>
-        <textarea id="comments" name="comments" rows="4" required></textarea><br><br>
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments" rows="6" required></textarea>
 
-        <button type="submit">Submit</button>
-      </form>
-    </section>
+      <button type="submit">Submit</button>
+    </form>
   </main>
 
   <footer>

@@ -1,71 +1,232 @@
-/* Base styles for portfolio site */
+/* =========================
+   Base / Theme
+   ========================= */
+:root {
+  --green-900: #065f46;       /* header / footer */
+  --accent: #facc15;          /* nav links */
+  --text: #111827;            /* body text */
+  --glass: rgba(255, 255, 255, 0.22);
+  --glass-strong: rgba(255, 255, 255, 0.28);
+  --glass-border: rgba(255, 255, 255, 0.35);
+  --shadow: 0 6px 22px rgba(0,0,0,.12);
+}
+
+* { box-sizing: border-box; }
 
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
-  background: linear-gradient(135deg, #dbeafe, #93c5fd); /* gradient requirement */
-  color: #111;
+  color: var(--text);
+  min-height: 100vh;
+  background: linear-gradient(135deg, #d1fae5, #10b981);
+  text-align: center;
 }
 
-/* Header */
+/* =========================
+   Header / Nav
+   ========================= */
 header {
-  background: #1e3a8a;
-  color: white;
-  padding: 1rem;
+  background: var(--green-900);
+  color: #fff;
   text-align: center;
+  padding: 1rem;
 }
+header h1 { margin: 0; }
 
+nav { margin-top: .5rem; }
 nav a {
-  color: #facc15;
-  margin: 0 10px;
+  color: var(--accent);
+  margin: 0 12px;
   text-decoration: none;
+  font-weight: bold;
 }
+nav a:hover { text-decoration: underline; }
 
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Main Content */
+/* =========================
+   Main
+   ========================= */
 main {
+  padding: 2rem 1.25rem;
+  width: 100%;
+}
+
+/* =========================
+   Frosted helper
+   ========================= */
+.frosted {
+  background: var(--glass);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* =========================
+   Homepage
+   ========================= */
+.home-container {
+  max-width: 1000px;
+  margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+}
+.home-container a {
+  color: #064e3b;
+  font-weight: bold;
+}
+.home-container a:hover { text-decoration: underline; }
+
+/* Gradient highlight for name */
+.name-highlight {
+  background: linear-gradient(90deg, #10b981, #3b82f6, #9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
-/* Footer */
-footer {
-  margin-top: 3rem;
-  padding: 1rem;
-  background: #1e3a8a;
-  color: white;
+/* Two mini-cards side by side without flexbox */
+.card-grid {
   text-align: center;
+  margin-top: 2rem;
+}
+.card {
+  display: inline-block;
+  vertical-align: top;
+  width: 42%;
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  background: var(--glass-strong);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+.card h2, .card h3 { margin-top: 0; }
+
+/* =========================
+   About Page
+   ========================= */
+.about-section {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+.about-section img {
+  max-width: 380px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  margin-bottom: 1rem;
+}
+.about-section video {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  margin: 1rem auto;
+  display: block;
 }
 
-/* Form Styling */
+/* =========================
+   Projects Page
+   ========================= */
+.projects-section {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+.project {
+  margin: 2rem auto;
+  padding: 1.25rem;
+  border-radius: 12px;
+  background: var(--glass-strong);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+.project img {
+  display: block;
+  margin: 1rem auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.12);
+}
+
+/* =========================
+   Contact Page
+   ========================= */
+.contact-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
 form {
-  max-width: 400px;
-  margin: auto;
+  max-width: 620px;
+  margin: 0 auto;
   text-align: left;
 }
-
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 1rem;
+}
 input, textarea {
   width: 100%;
-  padding: 8px;
-  margin: 5px 0 15px 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  padding: 12px;
+  margin-top: .3rem;
+  border: 1px solid #9ca3af;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, .65);
+  font-size: 1rem;
 }
-
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #10b981;
+  box-shadow: 0 0 4px rgba(16,185,129,.55);
+}
 button {
-  background: #1e3a8a;
-  color: white;
-  padding: 10px 20px;
+  display: block;
+  margin: 1.5rem auto 0;
+  background: #10b981;
+  color: #fff;
   border: none;
+  border-radius: 9px;
+  padding: 12px 24px;
+  font-size: 1rem;
   cursor: pointer;
-  border-radius: 5px;
+  transition: background .25s ease;
 }
+button:hover { background: #059669; }
 
-button:hover {
-  background: #2563eb;
+/* =========================
+   Footer
+   ========================= */
+footer {
+  background: var(--green-900);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+footer a { color: var(--accent); text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+
+/* =========================
+   Responsive
+   ========================= */
+@media (max-width: 760px) {
+  .card {
+    display: block;
+    width: 90%;
+    margin: 1rem auto;
+  }
+  .about-section img, .about-section video {
+    max-width: 100%;
+  }
 }

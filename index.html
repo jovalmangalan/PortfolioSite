@@ -1,21 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-
-  <!-- Base Styles -->
-  <link rel="stylesheet" href="css/style.css">
-
-  <!-- Responsive Styles -->
-  <link rel="stylesheet" href="css/mobile.css" media="(max-width: 600px)">
-  <link rel="stylesheet" href="css/tablet.css" media="(min-width: 601px) and (max-width: 1024px)">
-  <link rel="stylesheet" href="css/laptop.css" media="(min-width: 1025px)">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Homepage</title>
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
   <header>
-    <h1>Welcome to My Portfolio</h1>
+    <h1>Homepage</h1>
     <nav>
       <a href="index.html">Home</a> |
       <a href="about.html">About Me</a> |
@@ -25,9 +18,26 @@
   </header>
 
   <main>
-    <section>
-      <h2>Hello!</h2>
-      <p>HELLO WORLD!.</p>
+    <section class="home-container frosted">
+      <h2>Hello, I’m <span class="name-highlight">Joval</span></h2>
+      <p>Welcome to my portfolio! I’m passionate about Coding, Design, Networking and CyberSecurity.</p>
+      <p><a href="about.html">Learn More About Me</a></p>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>Recent Work</h3>
+          <p>
+            I’ve built a variety of projects, including a Snake Game, a cooking game called
+            <strong>Papi Joe’s Shawarmania</strong>, and a Healthcare Appointment App.
+            Check out the <a href="projects.html">Projects Page</a> for more details.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Core Skills</h3>
+          <p>My main tools include: HTML5, CSS3, Python, GitHub, and Responsive Design.</p>
+        </div>
+      </div>
     </section>
   </main>
 
