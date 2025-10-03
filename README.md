@@ -5,21 +5,21 @@ This project is my **HTML5 and CSS3 Portfolio Website**, created as part of **As
 
 ## File Structure  
 PortfolioSite/
-│
 ├── index.html # Homepage with intro, recent work, and core skills
 ├── about.html # About Me page with photo and video
 ├── projects.html # Projects page showcasing my work
 ├── contact.html # Contact page
 │
 ├── css/
-│ ├── style.css # Base styles and overall theme
-│ ├── mobile.css
-│ ├── tablet.css
-│ └── laptop.css
+│   ├── style.css # Base styles and overall theme
+│   ├── mobile.css
+│   ├── tablet.css
+│   └── laptop.css
 │
 ├── images/ # Screenshots and profile picture
 ├── videos/ # Embedded video files
 └── README.md # Documentation
+
 
 
 ## Features  
@@ -67,4 +67,4 @@ Deployed version: [GitHub Pages Link](https://jovalmangalan.github.io/PortfolioS
 - **CSS Validation**: All stylesheets passed the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/).  
 - **Accessibility Testing**:  
   - Checked with [WAVE Web Accessibility Tool](https://wave.webaim.org/).  
-  - All issues (such as low contrast on buttons and missing alt attributes) were fixed.
+  - Contrast on button issue fixed
