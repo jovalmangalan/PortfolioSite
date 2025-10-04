@@ -45,10 +45,22 @@ Deployed version: [GitHub Pages Link](https://jovalmangalan.github.io/PortfolioS
 
 ## Validation & Testing  
 - **HTML Validation**: All `.html` files passed the [W3C Markup Validation Service](https://validator.w3.org/) after fixes. All warnings (e.g., trailing slashes on void elements) were resolved.  
+  - ![HTML Validation Screenshot](https://github.com/user-attachments/assets/75a4f807-5bd5-4206-88d6-5d5d57ff860b)
+
 - **CSS Validation**: All stylesheets passed the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/).  
+  - ![CSS Validation Screenshot](https://github.com/user-attachments/assets/ce705ec5-d668-4385-8027-cb6215b8e298)
+
 - **Accessibility Testing**:  
   - Checked with [WAVE Web Accessibility Tool](https://wave.webaim.org/).  
-  - Contrast on button issue fixed
+  - Contrast on button issue fixed.  
+  - ![WAVE Accessibility Screenshot](https://github.com/user-attachments/assets/0d269c2c-b12d-4093-975a-075e38b26073)
+
+- **Link Validation**:  
+  - Tested with the [W3C Link Checker](https://validator.w3.org/checklink).  
+  - All internal and external links passed.  
+  - **Note:** The only issue flagged was with the `mailto:` link (`mailto:Joval.mangalan@ontariotechu.net`). This is expected since the Link Checker disables `mailto:` links by default — the email link works correctly in browsers.  
+  - ![Link Checker Screenshot](https://github.com/user-attachments/assets/c6ecc8ac-bc54-47f3-9a56-e3ba4c19ff98)
+
 
 
 ## External Code Citations  
