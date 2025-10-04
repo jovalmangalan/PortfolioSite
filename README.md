@@ -49,3 +49,9 @@ Deployed version: [GitHub Pages Link](https://jovalmangalan.github.io/PortfolioS
 - **Accessibility Testing**:  
   - Checked with [WAVE Web Accessibility Tool](https://wave.webaim.org/).  
   - Contrast on button issue fixed
+
+
+## External Code Citations  
+- **Gradient Text Effect (Name Highlight)**: Adapted from [CSS-Tricks – Gradient Text](https://css-tricks.com/gradient-text/) 
+- **Frosted Glass Effect (Glassmorphism)**: Inspired by [CSS-Tricks – Frosting Glass with CSS Filters](https://css-tricks.com/frosting-glass-css-filters/)
+- All other HTML, CSS, and content written by me.  
