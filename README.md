@@ -17,7 +17,7 @@ This project is my **HTML5 and CSS3 Portfolio Website**, created as part of **As
 ---
 
 ## Responsive Design (Viewport Sizes)  
-I created three separate stylesheets to support responsive design:  
+I created three separate stylesheets to support different screen sizes:  
 - **Mobile (`mobile.css`)** → `max-width: 600px`  
 - **Tablet (`tablet.css`)** → `601px – 1024px`  
 - **Laptop (`laptop.css`)** → `min-width: 1025px`  
